@@ -1,7 +1,8 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.8
+FROM tiangolo/uwsgi-nginx:python3.12
 
-COPY ./requirements.txt /app/
-RUN python3 -m pip install -r /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY . .
 

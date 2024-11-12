@@ -2,6 +2,6 @@ Flask
 pathlib
 Werkzeug
 torchvision
-opencv-python==4.2.0.32
+opencv-python
 Pillow
-numpy==1.22.3
+numpy
